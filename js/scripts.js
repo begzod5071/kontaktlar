@@ -15,6 +15,7 @@ elInputs.forEach(function(elInput) {
     contactOutput.textContent = elInput.value;
 
     elOutput.appendChild(contactOutput);
+    elInput.value = '';
   });
 });
 
@@ -28,4 +29,5 @@ elForm.addEventListener('submit', function(evt) {
   linkNumber.textContent = telNumber;
 
   elOutput.appendChild(linkNumber);
+  elNumberInput.value = '';
 });
