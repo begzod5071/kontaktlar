@@ -24,7 +24,7 @@ elForm.addEventListener('submit', function(evt) {
   var telNumber = elNumberInput.value;
 
   var linkNumber = document.createElement('a');
-  linkNumber.classList.add('h4','text-info');
+  linkNumber.classList.add('border-bottom','border-danger','text-info','h4');
   linkNumber.href = `tel: ${telNumber}`;
   linkNumber.textContent = telNumber;
 
